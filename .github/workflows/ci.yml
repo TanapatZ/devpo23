@@ -15,7 +15,8 @@ jobs:
 
       - name: Simulate Build
         run: docker compose up -d --build
-
+      - name: Simulate Build
+        run: docker compose logs backend
 
       - name: Simulate Test
         run:  docker compose exec -it backend curl http://backend:5000/api/users
