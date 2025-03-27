@@ -16,5 +16,9 @@ jobs:
       - name: Simulate Build
         run: docker compose up -d --build
 
+      - name: Simulate Error Log
+        run: docker logs devoppppppe2-db-1
+
+
       - name: Simulate Test
         run: curl http://lvm66097.sit.kmutt.ac.th:5000
