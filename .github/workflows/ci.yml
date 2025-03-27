@@ -15,7 +15,6 @@ jobs:
 
       - name: Simulate Build
         run: docker compose up -d 
-             docker logs devoppppppe2-db-1
 
 
       - name: Simulate Test
