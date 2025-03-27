@@ -18,6 +18,6 @@ jobs:
 
 
       - name: Simulate Test
-        run:  docker compose exec -it backend curl http://localhost:5000/
+        run:  docker compose exec -it backend curl http://backend:5000/api/users
       - name: Turn off
         run: docker compose down
