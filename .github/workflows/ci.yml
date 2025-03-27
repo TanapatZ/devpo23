@@ -19,4 +19,7 @@ jobs:
 
 
       - name: Simulate Test
-        run: curl http://lvm66097.sit.kmutt.ac.th:5000
+        run: curl docker compose exec -it web curl https://localhost:5000/api/users
+    
+      - name: Turn off
+        run: docker compose down
