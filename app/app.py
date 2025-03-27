@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # MySQL Connection
 db = mysql.connector.connect(
-    host="lab21practice-db-1",
+    host="db_server",
     user="root",
     password="rootpassword",
     database="unidb"
